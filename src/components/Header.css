@@ -1,0 +1,83 @@
+.header-container {
+    margin: -50px -100px 30px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #202020;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 3px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows the header content to wrap on smaller screens */
+}
+
+.header-container h1 {
+    font-family: 'Satisfy';
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 30px; /* Default font size */
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.user-img {
+    font-size: 30px; /* Default user image size */
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .header-container h1 {
+        font-size: 25px; /* Slightly smaller font size on medium screens */
+    }
+
+    .user-img {
+        font-size: 25px; /* Smaller user image size */
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .header-container h1 {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+
+    .user-img {
+        font-size: 20px; /* Smaller user image size */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px 5px; /* Smaller padding on mobile */
+    }
+
+    .header-container h1 {
+        font-size: 18px; /* Even smaller font size on mobile */
+    }
+
+    .user-img {
+        font-size: 18px; /* Even smaller user image size on mobile */
+    }
+}

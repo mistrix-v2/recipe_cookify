@@ -1,0 +1,71 @@
+.veggie-container {
+    margin: 50px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Heading style */
+.veggie-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #202020;
+    text-align: center;
+}
+
+/* Splide container styles */
+.splide {
+    width: 100%;
+    margin: 0 auto; /* Center align the items */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .veggie-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .splide {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Slightly smaller grid items for tablets */
+    }
+
+    .splide__arrow.splide__arrow--prev,
+    .splide__arrow.splide__arrow--next {
+        font-size: 18px; /* Adjust the arrow size */
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .veggie-container h1 {
+        font-size: 1.6rem; /* Smaller header text */
+    }
+
+    .splide {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Further adjust grid size for mobile */
+        gap: 1rem; /* Add space between items */
+    }
+
+    .splide__arrow.splide__arrow--prev,
+    .splide__arrow.splide__arrow--next {
+        font-size: 16px; /* Adjust the arrow size */
+    }
+}
+
+/* Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .veggie-container h1 {
+        font-size: 1.4rem; /* Even smaller header text */
+    }
+
+    .splide {
+        grid-template-columns: 1fr; /* One item per row for very small screens */
+        gap: 0.5rem; /* Adjust space between items */
+    }
+
+    .splide__arrow.splide__arrow--prev,
+    .splide__arrow.splide__arrow--next {
+        font-size: 14px; /* Smaller arrow size */
+    }
+}

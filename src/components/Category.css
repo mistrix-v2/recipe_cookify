@@ -1,0 +1,66 @@
+.category-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if the screen size is smaller */
+}
+
+.category-container a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    text-decoration: none;
+    /* Adjust the size for smaller screens */
+}
+
+.category-container a:hover {
+    transform: scale(0.95);
+}
+
+.active {
+    background-color: #F77121 !important;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .category-container {
+        gap: 30px; /* Reduce gap for medium screens */
+    }
+
+    .category-container a {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-container {
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+
+    .category-container a {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-container {
+        gap: 15px; /* Further reduce gap for mobile screens */
+        justify-content: space-evenly; /* Spread items evenly on smaller screens */
+    }
+
+    .category-container a {
+        height: 40px;
+        width: 40px;
+    }
+}

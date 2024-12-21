@@ -1,0 +1,63 @@
+/* App container styles */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes the full height of the screen */
+}
+
+/* Header styles */
+.app-container .header-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Pages section styles */
+.app-container .pages-container {
+    flex-grow: 1; /* Ensures the pages section takes up remaining space */
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+/* For Tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        flex-direction: column;
+    }
+    .header-container {
+        padding: 10px 15px;
+    }
+    .pages-container {
+        padding: 10px;
+    }
+}
+
+/* For Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .app-container .header-container {
+        padding: 10px;
+        font-size: 16px; /* Adjust header font size for mobile */
+    }
+    .app-container .pages-container {
+        padding: 10px;
+    }
+}
+
+/* For Small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .app-container .header-container {
+        padding: 10px 5px;
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+    .app-container .pages-container {
+        padding: 5px;
+    }
+}

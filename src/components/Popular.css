@@ -1,0 +1,55 @@
+.popular-container {
+    margin: 50px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.popular-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #202020;
+}
+
+/* Style the Splide carousel container */
+.splide {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Adjust the number of items per page for different screen sizes */
+@media (max-width: 1024px) {
+    .splide__slide {
+        flex: 0 0 45%; /* Two items per row on tablets */
+    }
+
+    .popular-container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .splide__slide {
+        flex: 0 0 48%; /* Two items per row on smaller screens */
+    }
+
+    .popular-container h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .splide__slide {
+        flex: 0 0 100%; /* One item per row on mobile screens */
+    }
+
+    .popular-container h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Style for the Skeleton loader */
+.MuiSkeleton-root {
+    border-radius: 8px;
+}
+
+/* Optional: You can add more specific styling for RecipeCard component */

@@ -1,0 +1,72 @@
+.search-field {
+    height: 40px;
+    width: 550px;
+    outline: none;  
+    padding-left: 40px;
+    background: linear-gradient(35deg, #494949, #313131);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+form {
+    position: relative;
+}
+
+form svg {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translate(0, -50%);
+    z-index: 10;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+    .search-field {
+        width: 400px; /* Adjust width for smaller screens */
+        font-size: 15px; /* Smaller font size */
+    }
+
+    form svg {
+        font-size: 18px; /* Smaller icon for smaller screens */
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+    .search-field {
+        width: 300px; /* Adjust width further for smaller devices */
+        height: 35px; /* Adjust height */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    form svg {
+        font-size: 16px; /* Smaller icon */
+    }
+}
+
+/* Very small mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .search-field {
+        width: 250px; /* Fit search field to very small screens */
+        height: 30px; /* Adjust height for compact design */
+        font-size: 13px; /* Even smaller font size */
+    }
+
+    form svg {
+        font-size: 14px; /* Even smaller icon for tiny screens */
+    }
+}
